@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { DemoClass } from "./DemoClass";
+import { DemoFunc } from "./DemoFunc";
 
 function App() {
+  const number = 5;
+
+  // return kısmında arayüze yansıtılacak bir kullanıcı tanımlı dil mevcut buna jsx formatı diyoruz.
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DemoClass title="demo class component" />
+      <DemoFunc title="demo fn component" />
     </div>
   );
 }
